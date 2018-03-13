@@ -1,0 +1,202 @@
+
+/* Media Screen Size
+======================================*/ 
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:1159px)";
+$large:  "only screen and (min-width:1160px)";
+
+
+/* 1 Header Contents(Small)
+======================================*/
+
+@media #{$small}{
+	.padder{
+		padding:0;
+	}
+	.group_header_wrap{
+		height:110px;
+		margin-top:-5px;
+		background-color:rgb(65,93,132);
+		color:white;
+		#group_title{
+			text-align:center;
+			padding-top:15px;
+			h3{
+				font-size:20px;
+				margin-bottom:5px;
+				font-weight:normal;
+			}
+		}
+		.group_infomation{
+			margin-top:5px;
+			text-align:center;
+			#group_item-meta{
+				display:inline-block;
+				margin:0 auto;
+				p{
+					float:left;
+					margin-bottom:0;
+				}
+			}
+			#group_item-button .group-button {
+				clear:both;
+				float:none;
+				margin:7px 0;
+				a{
+					position:relative;
+					top:5px;
+					left:3px;
+				}
+			}
+		}
+	}
+	#item-body{
+		.bpfb_form_container{
+			#whats-new-form{
+				padding:0;
+				border:none;
+			}
+			.form-explain{
+				text-align:center;
+				h4{
+					font-size:20px;
+					font-weight:normal;
+				}
+			}
+			#whats-new-content{
+				margin:0px;
+				padding:0px;
+				text-align:center;
+				#whats-new-textarea{
+					.date-pick-form{
+						margin-bottom:20px;
+						.description{
+							margin-bottom:0;
+						}
+						.ui-datepicker-trigger{
+							position:relative;
+							width:60px;
+							top:5px;
+							left:2px;
+						}
+					}
+				}
+				.bpfb_actions_container{
+					text-align:center;
+					padding-left:24%;
+					a{
+						width:70%;
+					}
+				}
+			}
+		}
+
+/* Group-Activity-Contents(Small)
+======================================*/
+	.single-group{
+		margin-top:30px;
+		#activity-stream{
+			.activity-header{
+				clear:both;
+				text-align:center;
+				padding:10px 0 6px 0;
+				margin:0;
+				margin-top:30px;
+				border-bottom:solid 1px #444;
+				color:#444;
+				font-size:20px;
+				font-weight:normal;
+			}
+			.activity-header-date{
+				clear:both;
+				text-align:center;
+				padding:10px 0 6px 0;
+				margin:0;
+				margin-top:30px;
+				border-bottom:solid 1px #444;
+				color:#444;
+				font-size:16px;
+				font-weight:normal;
+			}
+			margin:0;
+			.horizontal-scroll{
+				#activity-content-wrap{
+					padding:1px 0 5px 0;
+					overflow-x:scroll;
+					overflow-y:auto;
+					-webkit-overflow-scrolling:touch;
+					.bpfb_images{
+						height:100%;
+						.thickbox{
+							float:left;
+							width: 200px;
+							padding:10px;
+							margin:0 10px;
+							background:#fff;
+							box-shadow:0 0 10px 1px #e0e0e0;
+							img{
+								height: 200px;
+								width: 200px;
+							}
+						}
+					}
+				}
+			}
+		}	
+	}	
+
+/* No Parent Class%ID(Small)
+======================================*/
+		#bpfb_cancel_action{
+			text-align:center;
+		}
+		.group_infomation{
+			margin-bottom:20px;
+		}	
+		.qq-upload-button{
+			margin:0;
+			width:70%;
+		}
+		#group-end-space{
+			background-color:#444;
+			height:20px;
+			margin-top:30px;
+		}
+	}
+/* No display contents(Small)
+======================================*/
+	#whats-new-submit{
+		display:none;
+	}
+	#bpfb_addVideos{
+		display:none;
+	}
+	#bpfb_addLinks{
+		display:none;
+	}
+	#bpfb_add_remote_image{
+		display:none;
+	}
+	#datepicker{
+		display:none;
+	}
+	#TB_window{
+		margin-left:-47%!important;
+		margin-top:-80%!important;
+		width:95%!important;
+	}
+	#TB_Image{
+		width:86%!important;
+		height:86%!important;
+		margin:15px 0 15px 21px!important;
+	}
+	#TB_caption{
+		display:none;
+	}
+	#TB_closeWindow{
+		display:none;
+	}
+	.screen-reader-text{
+		display:none;
+	}
+}

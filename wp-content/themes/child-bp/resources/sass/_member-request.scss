@@ -1,0 +1,30 @@
+
+/* Media Screen Size
+======================================*/ 
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:1159px)";
+$large:  "only screen and (min-width:1160px)";
+
+
+/* 1 Header Contents(Small)
+======================================*/
+
+@media #{$small}{
+	#item-body{
+		#request-form-title{
+			text-align:center;
+			padding:10px 0;
+		}	
+		#request-membership-form{
+			text-align:center;
+			#group-request-send{
+				margin:10px 0 80px 0;
+				width:50%;
+			}
+		}
+	}
+	#request-list li{
+		padding-left:15%;
+		padding-bottom:30px;
+	}
+}

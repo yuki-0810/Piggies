@@ -1,0 +1,145 @@
+
+/* Media Screen Size
+======================================*/ 
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:1159px)";
+$large:  "only screen and (min-width:1160px)";
+
+
+/* 1 Header Contents(Small)
+======================================*/
+
+@media #{$small}{
+	body{
+		font-family:"Open Sans", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+	}
+	#header {
+		background: none;
+    	margin-bottom: 0;
+    	padding: 0; 
+		} 
+	#footer-widget-area{
+    	background-color: #3E3B3B;
+		.widgettitle{
+			padding:0!important;
+			margin:0;
+		}
+		.bp-login-widget-user-avatar{
+			height:30px;
+			a{
+				img{
+					position:relative;
+					top:11px;
+					left:5%;
+					border:none;
+					border-radius:50px;
+					float:left;
+				}
+				#header-count{
+					display:inline-block;
+					width:1.5em;
+					height:1.5em;
+					color:white;
+					background: #EA7A7A;
+					border-radius:1em;
+					text-align:center;
+					position:relative;
+					top:10px;
+				}
+			}
+		}
+		#groups-list{
+			.result{
+				margin-left:0px;
+				margin-right:50px;
+				li{
+					.search-lists{
+						display:block;
+						text-decoration:none;
+						height:48px;
+						p{
+							text-decoration:none;
+							color:white;
+							span{
+								text-decoration:none;
+								padding-left:5px;
+							}
+						}
+					}
+				}
+			}
+		}
+		.bp-login-widget-user-links{
+			display:none;
+		}
+		.group_create_button{
+				position:relative;
+				top:25px;
+				right:6px;
+				width:22%;
+				border-radius:25px;
+				background-color:#19A70C;
+			a{
+				position:relative;
+				top:5px;
+				left:14%;
+				display:block;
+				height:30px;
+				color:white;
+				text-decoration:none;
+				font-weight:normal;
+				#create_group_span{
+					text-align:center;
+					font-size:9px;
+				}
+			}
+		}
+		.group-search-link{
+				position:relative;
+				height:40px;
+				top:-9px;
+				right:-7%;
+				display:inline-block;
+				text-decoration:none;
+				font-weight:normal;
+				font-size:100%;
+				background-color:#19A70C;
+				width:52%;
+				border-radius:25px;
+				height:30px;
+				color:white;
+				text-align:center;
+				line-height:29px;
+				margin-bottom:10px;
+		}
+	}
+	#footer-widget-area{
+		.item-list{
+			position:relative;
+			left:7%;
+			top:-9px;
+			display:inline;
+			#search_sample_button{
+				position:relative;
+				top:-3px;
+				height:30px;
+				width:50%;
+			}
+			#search_sample_button:before{
+				content:'';
+				background-image:url("../images/logo1.png");
+				position:absolute;
+				top:4px;
+				right:4px;
+				background-size:8px 9px;
+			}
+		}
+	}
+	.group_create_button{
+		float:right;
+		margin-top:-3px;
+		#groups-directory-form{
+			height:25px;
+		}
+	}
+}

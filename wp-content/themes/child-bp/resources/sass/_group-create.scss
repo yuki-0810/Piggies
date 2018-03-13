@@ -1,0 +1,44 @@
+
+/* Media Screen Size
+======================================*/ 
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:1159px)";
+$large:  "only screen and (min-width:1160px)";
+
+
+/* 1 Header Contents(Small)
+======================================*/
+
+@media #{$small}{
+	#create-group-form{
+		padding:20px 20px 10px 20px;
+		.create-title{
+			text-align:center;
+			font-weight:normal;
+			font-size:22px;
+			border-bottom:solid 1px #444;
+		}
+		#group-create-body{
+			#group-desc{
+				display:none;
+			}
+			#group-creation-create{
+				display:block;
+				margin:0 auto;
+				width:150px;
+			}
+			#previous-next{
+				margin:0 auto;
+				#group-creation-previous{
+					margin:0;
+				}
+				#group-creation-finish{
+					width:200px;
+				}
+			}	
+		}
+	}	
+	.create-title{
+		padding-bottom:5px;
+	}
+}

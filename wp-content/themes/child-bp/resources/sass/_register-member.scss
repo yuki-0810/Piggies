@@ -1,0 +1,137 @@
+
+/* Media Screen Size
+======================================*/ 
+$small:  "only screen and (max-width:640px)";
+$middle: "only screen and (min-width:641px) and (max-width:1159px)";
+$large:  "only screen and (min-width:1160px)";
+
+
+/* 1 Header Contents(Small)
+======================================*/
+
+@media #{$small}{
+	#register-page{
+		padding:10px 30px 5px 30px;
+		margin-top:28px;
+		background-color:#e53282;
+		color:white;
+		#signup_form{
+			#register-confirm-title{
+				font-weight:normal;
+				font-size:22px;
+				border-bottom:1px solid #662112;
+				text-align:center;
+				padding-bottom:5px;
+			}
+			#register-confirm-description{
+				padding-bottom:0;
+				margin-bottom:0;
+			}
+			#sub-logo{
+				img{
+					display:block;
+					margin:0 auto;
+					width:100px;
+				}
+			}
+			#basic-details-section{
+				margin-bottom:30px;
+				.register-subtitle{
+					text-align:center;
+					font-weight:normal;
+					border-bottom:1px solid #662112;
+					font-size:18px;
+					padding-bottom:2px;
+				}
+				input{
+					margin:10px 0;
+				}
+				.register-subtitle:before{
+					content:'';
+				}
+				#signup_password{
+					width:90%;
+				}
+				#signup_password_confirm{
+					width:90%;
+					clear:both;
+				}
+			}
+			#profile-details-section{
+				.register-subtitle{
+					text-align:center;
+					font-weight:normal;
+					border-bottom:1px solid #444;
+					font-size:18px;
+					margin-bottom:25px;
+					padding-bottom:2px;
+				}
+				.editfield{
+					#field_1{
+						height:22px;
+					}
+					.field-visibility-settings-notoggle{
+						display:none;
+					}
+					.option-label{
+						color:white;
+					}
+					.description{
+						color:white;
+					}
+				}
+			}
+			.submit{
+				float:none;
+				padding-bottom:20px;
+				#signup_submit{
+					display:block;
+					margin:0 auto;
+					width:250px;
+				}
+			}
+		}
+	}	
+	#activate-page{
+		background-color:#e53282;
+		padding-bottom:340px;
+		color:white;
+		#activate-title{
+			margin-top:58px;
+			text-align:center;
+			border-bottom:1px solid #444;
+		}
+		#activate-description{
+			padding:0 30px;
+		}
+		#activate-login{
+			display:block;
+			margin:0 auto;
+			height:40px;
+			width:75%;
+			border-radius:25px; 
+			color:white; 
+			background-color:rgb(29,185,14); 
+			text-decoration:none;  
+			line-height:40px;
+			text-align:center;
+			font-size:16px;
+			font-weight:bold;
+			margin-bottom:5px;
+		}
+		#sub-logo{
+			img{
+				display:block;
+				margin:0 auto;
+				width:100px;
+			}
+		}
+	}	
+	#register-complete{
+		padding-bottom:330px;
+	}
+	#member-table-img{
+		width:40px;
+		height:40px;
+	}
+}
